@@ -1,0 +1,9 @@
+---
+- name: "Install Httpd"
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: install Httpd
+      yum:
+        name: Httpd
+        state: present
